@@ -1,13 +1,17 @@
-## Q: What is this template?
+## Q: What is this aws-vpn?
+- This repo is for making an ipv4 vpn with terraform and aws
 
-This template is for autoinstalling terraform and aws cli on windows within a workflow. The way that the workflow works is a python venv is created and everything is built off of the python venv. 
-Meaning you do not permanently install either on your system. 
+# Running Instructions
 
-## Why did you make this?
-I made this template to both imporove my skill in shell and because I needed a way to run terraform without having it system installed.
-This means you can run terraform from any machine only having python and venv package installed.
+- Fill out the aws.env.template 
+- cd wireguard_vpn 
+- Create an key pair named terraform-vpn-key and drop the pem in the wireguard_vpn folder
+- Run the workflow with `bash  ./build/aws.sh` then a to apply the terraform config
+- Install the wireguard vpn gui and load the generated client_config.conf
+- To decompose run the bash  ./build/aws.sh then enter d.  Removing artifacts.
 
-## How do I use this template.
 
-Fill out your aws.env file using the aws.env.template with your aws credentials then fill it out.
-Write your terraform code in the workflow then run build/aws.sh 
+## How do I use this vpn
+
+- Fast ipv4 vpn to the states to experiment with google bard. 
+- ipv4 vpn for webscraping stuff. 
