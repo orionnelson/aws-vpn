@@ -7,7 +7,7 @@
 - cd wireguard_vpn 
 - Create an key pair named terraform-vpn-key and drop the pem in the wireguard_vpn folder
 - Run the workflow with `bash  ./build/aws.sh` then a to apply the terraform config
-- Install the wireguard vpn gui and load the generated client_config.conf
+- Install the wireguard gui `windows` and load the generated client_config.conf
 - To decompose run the bash  ./build/aws.sh then enter d.  Removing artifacts.
 
 
